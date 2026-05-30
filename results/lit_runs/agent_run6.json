@@ -1,0 +1,81 @@
+{
+  "run_id": 6,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 2,
+  "n_searches": 8,
+  "n_unique_queries": 8,
+  "n_pmids_fetched": 5,
+  "pmids_fetched": [
+    "36693796",
+    "36870568",
+    "37084165",
+    "37236495",
+    "39222865"
+  ],
+  "queries": [
+    "metabolite correlations in human serum",
+    "human serum metabolomics",
+    "lactate and glucose correlation in human serum",
+    "relationship between lactate and glucose levels in human serum",
+    "lactate glucose human serum",
+    "studies that found NO correlation between lactate and glucose levels in human serum",
+    "lactate and glucose levels in human serum no correlation",
+    "human serum lactate glucose no association"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.14723247937445388,
+    "n_valid": 10,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Lactate__Glucose": 0.4
+      },
+      "noise_shift": {
+        "noise_amp": 0.2,
+        "shift_amp": 0.2
+      },
+      "ranges": {
+        "Glucose": [
+          0.2,
+          0.4
+        ],
+        "Lactate": [
+          -0.4,
+          0.4
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.12955817178207718,
+      "n_valid": 10
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.14723247937445388,
+      "n_valid": 10
+    }
+  ],
+  "improvement_best": -0.013239026128480269
+}

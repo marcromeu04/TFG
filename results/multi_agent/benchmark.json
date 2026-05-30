@@ -1,0 +1,18 @@
+{
+  "v1": {
+    "final_gap_closure": 0.08333333333333333,
+    "n_iterations": 10.0,
+    "schema_validity_rate": 0.4000000000000001,
+    "hallucination_rate": 0.0,
+    "reasoning_consistency": 0.5555555555555556,
+    "self_correction_rate": 0.0
+  },
+  "v2": {
+    "final_gap_closure": 0.17666666666666667,
+    "n_iterations": 10.0,
+    "schema_validity_rate": 0.5430107526881721,
+    "hallucination_rate": 0.0,
+    "reasoning_consistency": 0.0,
+    "self_correction_rate": 0.0
+  }
+}

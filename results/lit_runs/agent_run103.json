@@ -1,0 +1,128 @@
+{
+  "run_id": 103,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 4,
+  "n_searches": 4,
+  "n_unique_queries": 2,
+  "n_pmids_fetched": 2,
+  "pmids_fetched": [
+    "33177712",
+    "34074845"
+  ],
+  "queries": [
+    "metabolite correlations in human serum",
+    "human serum metabolomics",
+    "metabolite correlations in human serum",
+    "human serum metabolomics"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.04562506312989367,
+    "n_valid": 6,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Lactate__Pyruvate": 0.5
+      },
+      "noise_shift": {
+        "noise_amp": 0.1,
+        "shift_amp": 0.1
+      },
+      "ranges": {
+        "Betaine": [
+          0.1,
+          0.5
+        ],
+        "Choline": [
+          0.1,
+          0.5
+        ],
+        "Creatine": [
+          0.1,
+          0.5
+        ],
+        "Creatinine": [
+          0.1,
+          0.5
+        ],
+        "Cysteine": [
+          0.1,
+          0.5
+        ],
+        "Glucose": [
+          4,
+          6
+        ],
+        "Glycine": [
+          0.1,
+          0.5
+        ],
+        "Histidine": [
+          0.1,
+          0.5
+        ],
+        "Lactate": [
+          0.5,
+          1.5
+        ],
+        "Pyruvate": [
+          0.1,
+          0.5
+        ],
+        "Serine": [
+          0.1,
+          0.5
+        ],
+        "Threonine": [
+          0.1,
+          0.5
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.04562506312989367,
+      "n_valid": 6
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.04562506312989367,
+      "n_valid": 6
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ensemble_top3",
+      "spearman_mean": 0.00398719715240177,
+      "n_valid": 12
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "rf_roi",
+      "spearman_mean": 0.013090645087939763,
+      "n_valid": 12
+    }
+  ],
+  "improvement_best": -0.11484644237304048
+}

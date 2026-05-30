@@ -1,0 +1,29 @@
+{
+  "ranges": {
+    "Lactate": [-1.5, 0.5],
+    "Histidine": [-3.0, 0.5],
+    "Cysteine": [-2.5, 0.5],
+    "Glucose": [-1.0, 0.5],
+    "Glycine": [-2.0, 0.5],
+    "Betaine": [-2.5, 0.5],
+    "Pyruvate": [-2.0, 0.5],
+    "Threonine": [-2.5, 0.5],
+    "Serine": [-2.0, 0.5],
+    "Choline": [-2.5, 0.5],
+    "Creatine": [-2.0, 0.5],
+    "Creatinine": [-3.0, 0.5]
+  },
+  "correlations": {
+    "Lactate, Pyruvate": 0.7,
+    "Glucose, Lactate": 0.4,
+    "Creatine, Creatinine": 0.8,
+    "Choline, Betaine": 0.5
+  },
+  "shift_std_ppm": 0.01,
+  "noise_relative_std": 0.05,
+  "baseline": {
+    "kind": "polynomial",
+    "amplitude": 0.1
+  },
+  "rationale": "The chosen concentration ranges are based on typical physiological ranges found in human serum. The correlations between Lactate and Pyruvate, and between Glucose and Lactate, reflect their roles in glycolysis. The correlation between Creatine and Creatinine reflects their relationship in muscle metabolism. The correlation between Choline and Betaine reflects their role in methylation processes. The uncertainty in these correlations and concentration ranges is reflected in the chosen standard deviations. The shift and noise parameters are based on typical values for 1H NMR spectroscopy."
+}

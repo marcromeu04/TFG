@@ -1,0 +1,104 @@
+{
+  "run_id": 3,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.5,
+  "n_iterations_completed": 5,
+  "n_evaluations": 1,
+  "n_searches": 3,
+  "n_unique_queries": 3,
+  "n_pmids_fetched": 0,
+  "pmids_fetched": [],
+  "queries": [
+    "Histidine metabolism in human serum",
+    "metabolomics of lactate and glucose in human serum",
+    "relationship between choline and creatine in human metabolism"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": -0.11087857773075391,
+    "n_valid": 1,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Betaine__Pyruvate": 0.2,
+        "Creatine__Creatinine": 0.5,
+        "Glucose__Glycine": 0.3,
+        "Histidine__Cysteine": 0.2,
+        "Lactate__Glucose": 0.5,
+        "Threonine__Serine": 0.3
+      },
+      "noise_shift": {
+        "noise_amp": 0.1,
+        "shift_amp": 0.01
+      },
+      "ranges": {
+        "Betaine": [
+          0.2,
+          0.5
+        ],
+        "Creatine": [
+          0.5,
+          1
+        ],
+        "Creatinine": [
+          0.2,
+          0.5
+        ],
+        "Cysteine": [
+          0.3,
+          0.8
+        ],
+        "Glucose": [
+          0.5,
+          1
+        ],
+        "Glycine": [
+          0.3,
+          0.8
+        ],
+        "Histidine": [
+          0.8,
+          1.2
+        ],
+        "Lactate": [
+          0.5,
+          1
+        ],
+        "Pyruvate": [
+          0.3,
+          0.8
+        ],
+        "Serine": [
+          0.3,
+          0.8
+        ],
+        "Threonine": [
+          0.3,
+          0.8
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": -0.11087857773075391,
+      "n_valid": 1
+    }
+  ],
+  "improvement_best": -0.27135008323368803
+}

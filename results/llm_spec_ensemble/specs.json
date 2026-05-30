@@ -1,0 +1,1174 @@
+[
+  {
+    "id": 0,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -3.5,
+          1.0
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.5,
+          0.5
+        ],
+        "Betaine": [
+          -2.0,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -3.0,
+          0.5
+        ],
+        "Serine": [
+          -3.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.5,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Glucose": 0.4,
+        "Pyruvate, Lactate": 0.6,
+        "Creatine, Creatinine": 0.7,
+        "Choline, Betaine": 0.3
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges are based on general literature values, with a focus on the typical concentrations found in human serum. The correlations are based on known metabolic pathways, such as glycolysis (Glucose to Lactate to Pyruvate) and creatine kinase reaction (Creatine to Creatinine). Choline and Betaine are related through the methylation pathway. The shift and noise parameters are chosen to reflect typical NMR instrumental variability. The baseline is modeled as a polynomial, which is a common approach for NMR spectra. The amplitude is set to a moderate value to reflect the typical baseline variation."
+    }
+  },
+  {
+    "id": 1,
+    "spec": {}
+  },
+  {
+    "id": 2,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature values. Correlations are established based on known metabolic pathways: Lactate and Pyruvate are linked through glycolysis, Glucose and Lactate through glycolysis and gluconeogenesis, Creatine and Creatinine through muscle metabolism, and Choline and Betaine through one-carbon metabolism. The shift and noise parameters are typical for 1H NMR spectroscopy. The baseline is modeled as a polynomial, which is a common approach for NMR spectra."
+    }
+  },
+  {
+    "id": 3,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.5,
+        "Creatine, Creatinine": 0.8,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature values for human serum. Correlations are based on known metabolic pathways, such as lactate and pyruvate being linked through glycolysis, and glucose and lactate being related through glycolytic flux. The creatine and creatinine correlation is due to their shared biosynthetic pathway. The choline and betaine correlation is based on their role in methylation processes. The shift standard deviation and noise relative standard deviation are typical values for 1H NMR spectra. The baseline is modeled as a polynomial with a moderate amplitude, reflecting the typical baseline characteristics of 1H NMR spectra of human serum."
+    }
+  },
+  {
+    "id": 4,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on typical values reported in the literature for human serum. Correlations between metabolites are informed by known biochemical pathways, such as glycolysis (Lactate, Pyruvate, Glucose) and creatine kinase reaction (Creatine, Creatinine). The correlation between Choline and Betaine is based on their role in methylation processes. The chosen shift and noise parameters are typical for 1H NMR spectra. The baseline is modeled as a polynomial, which is a common approach for NMR spectra. The amplitude of the baseline is set to a relatively low value to reflect the typical smoothness of NMR baselines."
+    }
+  },
+  {
+    "id": 5,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.4,
+        "Creatine, Creatinine": 0.8,
+        "Choline, Betaine": 0.5
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges for each metabolite are based on general literature priors, with the means and standard deviations representing typical concentrations found in human serum. The correlations between lactate and pyruvate, glucose and lactate, creatine and creatinine, and choline and betaine are based on known metabolic pathways, such as glycolysis and the creatine kinase reaction. The correlations are uncertain and may vary depending on the specific cohort or condition. The shift standard deviation and noise relative standard deviation are typical values for 1H NMR spectroscopy. The baseline is modeled as a polynomial with a small amplitude, representing a relatively flat baseline with some minor variations."
+    }
+  },
+  {
+    "id": 6,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.5,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.5,
+        "Creatine, Creatinine": 0.8,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature values for human serum metabolites. Correlations between Lactate and Pyruvate, and Glucose and Lactate, are expected due to their roles in glycolysis. The correlation between Creatine and Creatinine reflects their related metabolic pathways. The Choline and Betaine correlation is based on their involvement in methylation processes. The shift and noise parameters are typical values for 1H NMR spectra. The baseline is modeled as a polynomial with a small amplitude, which is a common approach for NMR spectra."
+    }
+  },
+  {
+    "id": 7,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.5,
+        "Creatine, Creatinine": 0.8,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges are based on typical concentrations of these metabolites in human serum. Correlations are established based on known metabolic pathways: lactate and pyruvate are linked through glycolysis, glucose and lactate are connected through glycolytic flux, creatine and creatinine are related through muscle metabolism, and choline and betaine are associated through the methylation cycle. The shift standard deviation and noise relative standard deviation are set to typical values for 1H NMR spectra. The baseline is modeled as a polynomial, which is a common approach for NMR spectra."
+    }
+  },
+  {
+    "id": 8,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Glucose": 0.3,
+        "Lactate, Pyruvate": 0.5,
+        "Pyruvate, Glucose": -0.2,
+        "Creatine, Creatinine": 0.7,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges are based on general literature priors, with most metabolites having concentrations in the range of 0.01-10 mM. Correlations are based on known metabolic pathways, such as glycolysis (Lactate, Glucose, Pyruvate) and creatine kinase reaction (Creatine, Creatinine). The correlation between Choline and Betaine is based on their role in methylation processes. The shift standard deviation and noise relative standard deviation are based on typical values for 1H NMR spectra. The baseline is modeled as a polynomial with a small amplitude, as is common in NMR spectroscopy."
+    }
+  },
+  {
+    "id": 9,
+    "spec": {}
+  },
+  {
+    "id": 10,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.5,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature values. Correlations are included for metabolites known to be linked through major metabolic pathways, such as glycolysis (Lactate and Pyruvate) and glucose metabolism (Glucose and Lactate). The strong correlation between Creatine and Creatinine reflects their related metabolic roles. The correlation between Choline and Betaine is based on their involvement in methylation processes. The shift and noise parameters are set to typical values for 1H NMR spectra. The baseline is modeled as a polynomial, which is a common approach for NMR spectra."
+    }
+  },
+  {
+    "id": 11,
+    "spec": {}
+  },
+  {
+    "id": 12,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Glucose": 0.5,
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Pyruvate": 0.3,
+        "Creatine, Creatinine": 0.8,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The proposed ranges are based on general concentration ranges found in human serum. Correlations are based on known metabolic pathways, such as glycolysis (Lactate, Glucose, Pyruvate) and creatine kinase reaction (Creatine, Creatinine). Choline and Betaine are related through the methionine cycle. The shift and noise parameters are typical for 1H NMR spectra. The baseline is modeled as a polynomial with a small amplitude, as is common in NMR spectra. Note that these values are based on general literature priors and may not reflect specific cohort or patient data."
+    }
+  },
+  {
+    "id": 13,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.5,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges are based on general literature priors, with lactate and glucose having higher concentrations. Correlations are established based on known metabolic pathways: lactate and pyruvate are linked through glycolysis, glucose and lactate are associated with energy metabolism, creatine and creatinine are related through muscle metabolism, and choline and betaine are connected through methylation processes. The shift standard deviation and noise relative standard deviation are set to typical values for 1H NMR spectroscopy. The baseline is modeled as a polynomial with a moderate amplitude, reflecting the variability of serum spectra."
+    }
+  },
+  {
+    "id": 14,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.4,
+        "Glucose, Pyruvate": 0.3,
+        "Creatine, Creatinine": 0.6,
+        "Choline, Betaine": 0.5
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The ranges for each metabolite are based on general literature priors, with lactate and glucose having relatively higher concentrations. Correlations are based on known metabolic pathways, such as glycolysis (glucose to lactate to pyruvate) and creatine kinase reaction (creatine to creatinine). Choline and betaine are correlated due to their role in methylation processes. The shift standard deviation and noise relative standard deviation are chosen to reflect typical 1H NMR experimental conditions. The baseline is modeled as a polynomial with low amplitude, reflecting the typical smooth baseline observed in 1H NMR spectra of serum."
+    }
+  },
+  {
+    "id": 15,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.7,
+        "Glucose, Lactate": 0.4,
+        "Glucose, Pyruvate": 0.3,
+        "Creatine, Creatinine": 0.6,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.1,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The chosen concentration ranges are based on general literature values. Correlations between metabolites are based on known metabolic pathways, such as glycolysis (Glucose to Pyruvate to Lactate) and creatine kinase reaction (Creatine to Creatinine). The correlation between Choline and Betaine is based on their role in methylation processes. The shift and noise parameters are typical for 1H NMR spectra. The baseline is modeled as a polynomial, which is a common approach for NMR spectra. The amplitude of the baseline is set to a relatively low value, assuming a well-shimmed magnet."
+    }
+  },
+  {
+    "id": 16,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Choline, Betaine)": 0.5,
+        "(Creatine, Creatinine)": 0.8
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on typical values found in human serum, with means and standard deviations estimated from literature reviews. Correlations are included for metabolites known to be biologically linked, such as Lactate and Pyruvate through glycolysis, Glucose and Lactate through glycolytic flux, Choline and Betaine through one-carbon metabolism, and Creatine and Creatinine through creatine kinase activity. The shift standard deviation and noise relative standard deviation are estimated from typical NMR instrumental variations. The baseline is modeled as a polynomial, reflecting common practice in NMR spectral processing."
+    }
+  },
+  {
+    "id": 17,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.0,
+          0.5
+        ],
+        "Creatine": [
+          -1.5,
+          0.5
+        ],
+        "Creatinine": [
+          -2.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "Lactate, Pyruvate": 0.5,
+        "Glucose, Lactate": 0.3,
+        "Creatine, Creatinine": 0.7,
+        "Choline, Betaine": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature priors, with most metabolites having a mean log10 concentration between -3 and -1. Correlations are based on known biological links, such as lactate and pyruvate being linked through anaerobic glycolysis, and glucose and lactate being linked through glycolysis. The correlation between creatine and creatinine is based on their shared biosynthetic pathway. The shift standard deviation and noise relative standard deviation are based on typical values for 1H NMR spectroscopy. The baseline is modeled as a polynomial with a moderate amplitude, as this is a common approach for modeling NMR baselines."
+    }
+  },
+  {
+    "id": 18,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.5,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature values for human serum metabolites. Correlations are chosen based on known metabolic pathways: lactate and pyruvate are linked through glycolysis, glucose and lactate through glycolysis and gluconeogenesis, creatine and creatinine through muscle metabolism, and choline and betaine through choline metabolism. The shift and noise parameters are typical for 1H NMR spectra. The baseline is modelled as a polynomial, which is a common choice for NMR spectra. The amplitude is set to a relatively low value to reflect the typical smoothness of NMR baselines."
+    }
+  },
+  {
+    "id": 19,
+    "spec": {
+      "ranges": {
+        "Lactate": [
+          -1.5,
+          0.5
+        ],
+        "Histidine": [
+          -3.0,
+          0.5
+        ],
+        "Cysteine": [
+          -2.5,
+          0.5
+        ],
+        "Glucose": [
+          -1.0,
+          0.5
+        ],
+        "Glycine": [
+          -2.0,
+          0.5
+        ],
+        "Betaine": [
+          -2.5,
+          0.5
+        ],
+        "Pyruvate": [
+          -2.0,
+          0.5
+        ],
+        "Threonine": [
+          -2.5,
+          0.5
+        ],
+        "Serine": [
+          -2.0,
+          0.5
+        ],
+        "Choline": [
+          -2.5,
+          0.5
+        ],
+        "Creatine": [
+          -2.0,
+          0.5
+        ],
+        "Creatinine": [
+          -3.0,
+          0.5
+        ]
+      },
+      "correlations": {
+        "(Lactate, Pyruvate)": 0.7,
+        "(Glucose, Lactate)": 0.5,
+        "(Creatine, Creatinine)": 0.8,
+        "(Choline, Betaine)": 0.4
+      },
+      "shift_std_ppm": 0.01,
+      "noise_relative_std": 0.05,
+      "baseline": {
+        "kind": "polynomial",
+        "amplitude": 0.1
+      },
+      "rationale": "The concentration ranges are based on general literature priors, with lactate and glucose having relatively higher concentrations. Correlations are based on known metabolic pathways, such as lactate and pyruvate being linked through glycolysis, and glucose and lactate being related through glucose metabolism. Creatine and creatinine are correlated due to their shared metabolic pathway. Choline and betaine are correlated due to their role in methylation processes. The shift and noise parameters are based on typical values for 1H NMR spectroscopy. The baseline is modeled as a polynomial with a moderate amplitude, reflecting the complexity of serum spectra."
+    }
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "naive_default": {
+    "spearman_mean": 0.14480707439129747,
+    "n_valid": 10,
+    "mape_median": 92.21408193978897,
+    "mape_mean": 84.33933612307996,
+    "mape_min": 50.83179014987134,
+    "mape_max": 110.06890019211504,
+    "pearson_log_mean": 0.09724463722782412
+  },
+  "llm_canonical": {
+    "spearman_mean": 0.0783377587995901,
+    "n_valid": 10,
+    "mape_median": 91.49838426192372,
+    "mape_mean": 85.58101311154618,
+    "mape_min": 38.9426638666915,
+    "mape_max": 97.95140684105522,
+    "pearson_log_mean": 0.08780368995488452
+  },
+  "spec_17": {
+    "spearman_mean": 0.11856019364580495,
+    "n_valid": 5,
+    "mape_median": 93.7799388892096,
+    "mape_mean": 86.48262008693915,
+    "mape_min": 53.66332159524777,
+    "mape_max": 95.7125058628833,
+    "pearson_log_mean": 0.07328937106434755
+  },
+  "spec_10": {
+    "spearman_mean": 0.11425789974151732,
+    "n_valid": 5,
+    "mape_median": 93.7884069180758,
+    "mape_mean": 87.03408480592847,
+    "mape_min": 55.75192304504301,
+    "mape_max": 96.92405030451725,
+    "pearson_log_mean": 0.09223365313429199
+  },
+  "spec_01": {
+    "spearman_mean": 0.14461833879620423,
+    "n_valid": 6,
+    "mape_median": 95.3819125480462,
+    "mape_mean": 90.4419643318023,
+    "mape_min": 61.36881140897621,
+    "mape_max": 98.58430905813643,
+    "pearson_log_mean": 0.1670759338427835
+  },
+  "spec_15": {
+    "spearman_mean": 0.1836372000227142,
+    "n_valid": 5,
+    "mape_median": 98.0180253220982,
+    "mape_mean": 93.43428916565605,
+    "mape_min": 75.01020534104596,
+    "mape_max": 99.00558898192197,
+    "pearson_log_mean": 0.16497116964222944
+  },
+  "spec_08": {
+    "spearman_mean": 0.10646741639278379,
+    "n_valid": 5,
+    "mape_median": 95.87604956526138,
+    "mape_mean": 89.34473996817476,
+    "mape_min": 61.110565754301305,
+    "mape_max": 98.99989024927363,
+    "pearson_log_mean": 0.13808647126669396
+  },
+  "spec_05": {
+    "spearman_mean": 0.10168706055595807,
+    "n_valid": 5,
+    "mape_median": 93.1536460813859,
+    "mape_mean": 86.02878289168433,
+    "mape_min": 55.81269657270248,
+    "mape_max": 95.53925879964041,
+    "pearson_log_mean": 0.02826258436696516
+  },
+  "spec_14": {
+    "spearman_mean": 0.14564760484110334,
+    "n_valid": 6,
+    "mape_median": 95.37811983615305,
+    "mape_mean": 90.47479320336573,
+    "mape_min": 61.56672094603164,
+    "mape_max": 98.58649874789312,
+    "pearson_log_mean": 0.16706843442385702
+  },
+  "spec_canonical": {
+    "spearman_mean": 0.08483128412490763,
+    "n_valid": 6,
+    "mape_median": 95.11029258189555,
+    "mape_mean": 90.22730691156973,
+    "mape_min": 61.03423142130965,
+    "mape_max": 98.57434473973056,
+    "pearson_log_mean": 0.0700029318337458
+  },
+  "spec_04": {
+    "spearman_mean": 0.11141826932311702,
+    "n_valid": 5,
+    "mape_median": 93.6994452154897,
+    "mape_mean": 86.07787879808772,
+    "mape_min": 53.366978545948285,
+    "mape_max": 95.77335994526013,
+    "pearson_log_mean": 0.06113200472474052
+  },
+  "spec_09": {
+    "spearman_mean": 0.11425789974151732,
+    "n_valid": 5,
+    "mape_median": 93.7884069180758,
+    "mape_mean": 87.03408480592847,
+    "mape_min": 55.75192304504301,
+    "mape_max": 96.92405030451725,
+    "pearson_log_mean": 0.09223365313429199
+  },
+  "spec_02": {
+    "spearman_mean": 0.1104372248349181,
+    "n_valid": 5,
+    "mape_median": 93.89112529378929,
+    "mape_mean": 86.37066885497998,
+    "mape_min": 56.20347934534392,
+    "mape_max": 95.56252771795639,
+    "pearson_log_mean": 0.11948381995044874
+  },
+  "spec_18": {
+    "spearman_mean": 0.13127241375191645,
+    "n_valid": 6,
+    "mape_median": 94.99274589395421,
+    "mape_mean": 89.97798265279253,
+    "mape_min": 60.17687570671294,
+    "mape_max": 99.33942965683137,
+    "pearson_log_mean": 0.14414113897242586
+  },
+  "spec_00": {
+    "spearman_mean": 0.08483128412490763,
+    "n_valid": 6,
+    "mape_median": 95.11029258189555,
+    "mape_mean": 90.22730691156973,
+    "mape_min": 61.03423142130965,
+    "mape_max": 98.57434473973056,
+    "pearson_log_mean": 0.0700029318337458
+  },
+  "spec_06": {
+    "spearman_mean": 0.11141826932311702,
+    "n_valid": 5,
+    "mape_median": 93.6994452154897,
+    "mape_mean": 86.07787879808772,
+    "mape_min": 53.366978545948285,
+    "mape_max": 95.77335994526013,
+    "pearson_log_mean": 0.06113200472474052
+  },
+  "spec_16": {
+    "spearman_mean": 0.08685415179071608,
+    "n_valid": 6,
+    "mape_median": 95.08687475367458,
+    "mape_mean": 90.20179710365032,
+    "mape_min": 61.22644804637305,
+    "mape_max": 99.2850245995256,
+    "pearson_log_mean": 0.10473287246469416
+  },
+  "spec_12": {
+    "spearman_mean": 0.10079575102739342,
+    "n_valid": 6,
+    "mape_median": 95.29715918324878,
+    "mape_mean": 90.47188965080746,
+    "mape_min": 61.27733803469132,
+    "mape_max": 99.29548419175586,
+    "pearson_log_mean": 0.1023042410683347
+  },
+  "spec_11": {
+    "spearman_mean": 0.1042425952284027,
+    "n_valid": 5,
+    "mape_median": 93.71793825863625,
+    "mape_mean": 86.06534419822127,
+    "mape_min": 53.14459977361049,
+    "mape_max": 95.6261598529161,
+    "pearson_log_mean": 0.06392068054454819
+  },
+  "spec_03": {
+    "spearman_mean": 0.08574805152281173,
+    "n_valid": 6,
+    "mape_median": 95.12538372730072,
+    "mape_mean": 90.43108439835042,
+    "mape_min": 61.561475625042995,
+    "mape_max": 99.3135320401715,
+    "pearson_log_mean": 0.10786603140048116
+  },
+  "spec_07": {
+    "spearman_mean": 0.11141826932311702,
+    "n_valid": 5,
+    "mape_median": 93.6994452154897,
+    "mape_mean": 86.07787879808772,
+    "mape_min": 53.366978545948285,
+    "mape_max": 95.77335994526013,
+    "pearson_log_mean": 0.06113200472474052
+  },
+  "spec_19": {
+    "spearman_mean": 0.0867333292992714,
+    "n_valid": 6,
+    "mape_median": 95.0863721201986,
+    "mape_mean": 90.16444566829325,
+    "mape_min": 61.021673992737306,
+    "mape_max": 99.28166159830725,
+    "pearson_log_mean": 0.10633680110570466
+  },
+  "spec_13": {
+    "spearman_mean": 0.11425789974151732,
+    "n_valid": 5,
+    "mape_median": 93.7884069180758,
+    "mape_mean": 87.03408480592847,
+    "mape_min": 55.75192304504301,
+    "mape_max": 96.92405030451725,
+    "pearson_log_mean": 0.09223365313429199
+  },
+  "spec_hmdb_informed": {
+    "spearman_mean": 0.1538834431829254,
+    "n_valid": 11,
+    "mape_median": 94.20584678616684,
+    "mape_mean": 96.97062190950977,
+    "mape_min": 33.83684249314217,
+    "mape_max": 176.44858282506414,
+    "pearson_log_mean": 0.11442691147475585
+  }
+}

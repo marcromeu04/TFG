@@ -1,0 +1,84 @@
+{
+  "run_id": 101,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 3,
+  "n_searches": 3,
+  "n_unique_queries": 2,
+  "n_pmids_fetched": 5,
+  "pmids_fetched": [
+    "31346171",
+    "36306677",
+    "36389821",
+    "36624472",
+    "39632843"
+  ],
+  "queries": [
+    "Histidine OR Glycine OR Betaine OR Pyruvate OR Threonine OR Creatine OR Creatinine AND serum metabolomics",
+    "glycine serine threonine metabolism serum resistance",
+    "glycine serine threonine metabolism serum resistance"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.18902399188121952,
+    "n_valid": 6,
+    "model_used": "pls_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Glycine__Serine": 0.4,
+        "Threonine__Serine": 0.3
+      },
+      "noise_shift": {
+        "noise_amp": 0.2,
+        "shift_amp": 0.2
+      },
+      "ranges": {
+        "Glycine": [
+          0.7,
+          0.3
+        ],
+        "Serine": [
+          0.6,
+          0.2
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.15512481477720874,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "pls_bins",
+      "spearman_mean": 0.18902399188121952,
+      "n_valid": 6
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "pls_bins",
+      "spearman_mean": 0.18902399188121952,
+      "n_valid": 6
+    }
+  ],
+  "improvement_best": 0.028552486378285363
+}

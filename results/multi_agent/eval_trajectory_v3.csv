@@ -1,0 +1,14 @@
+overrides,spearman
+{},0.09058186233669366
+"{""correlation_regime"": ""CHENOMX""}",0.08644899840394417
+"{""baseline_kind"": ""empirical_resample"", ""concentration_std_multiplier"": 0.5}",-0.12402146396729784
+"{""concentration_std_multiplier"": 0.5, ""shift_std_ppm"": 1.5}",0.01205875458389291
+"{""concentration_std_multiplier"": 0.5, ""noise_relative_std"": 0.5}",0.13924717853576957
+"{""correlation_regime"": ""CHENOMX"", ""concentration_std_multiplier"": 0.5}",-0.1069144710060989
+"{""shift_std_ppm"": 0.5, ""baseline_kind"": ""empirical_resample""}",0.0808354875125571
+"{""noise_relative_std"": 0.5, ""shift_std_ppm"": 2.0}",0.011737267875532984
+"{""baseline_kind"": ""empirical_pca"", ""shift_std_ppm"": 0.5}",0.12985296309198496
+"{""correlation_regime"": ""CHENOMX"", ""baseline_kind"": ""empirical_pca""}",-0.10328697259256583
+"{""correlation_regime"": ""INDEPENDENT"", ""baseline_kind"": ""polynomial"", ""noise_relative_std"": 0.1, ""shift_std_ppm"": 0.5, ""concentration_std_multiplier"": 1.5}",0.09452148934125394
+"{""correlation_regime"": ""CHENOMX"", ""baseline_kind"": ""empirical_pca"", ""concentration_std_multiplier"": 0.5}",-0.12426903300824822
+"{""correlation_regime"": ""CHENOMX"", ""shift_std_ppm"": 1.0}",0.08605323880692849

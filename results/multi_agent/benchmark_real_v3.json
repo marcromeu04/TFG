@@ -1,0 +1,21 @@
+{
+  "v1": {
+    "final_gap_closure": 0.014762362965577376,
+    "n_iterations": 6.0,
+    "schema_validity_rate": 1.0,
+    "hallucination_rate": 0.0,
+    "reasoning_consistency": 0.6,
+    "self_correction_rate": 1.0
+  },
+  "v2": {
+    "final_gap_closure": -0.10742544767247095,
+    "n_iterations": 6.0,
+    "schema_validity_rate": 0.42105263157894735,
+    "hallucination_rate": 0.0,
+    "reasoning_consistency": 0.5,
+    "self_correction_rate": 0.5
+  },
+  "v1_best_spearman_mean": 0.10534422530227103,
+  "v2_best_spearman_mean": -0.016843585335777282,
+  "initial_spearman": 0.09058186233669366
+}

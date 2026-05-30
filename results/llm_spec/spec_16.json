@@ -1,0 +1,65 @@
+{
+  "ranges": {
+    "Lactate": [
+      -1.5,
+      0.5
+    ],
+    "Histidine": [
+      -3.0,
+      0.5
+    ],
+    "Cysteine": [
+      -2.5,
+      0.5
+    ],
+    "Glucose": [
+      -1.0,
+      0.5
+    ],
+    "Glycine": [
+      -2.0,
+      0.5
+    ],
+    "Betaine": [
+      -2.5,
+      0.5
+    ],
+    "Pyruvate": [
+      -2.0,
+      0.5
+    ],
+    "Threonine": [
+      -2.5,
+      0.5
+    ],
+    "Serine": [
+      -2.0,
+      0.5
+    ],
+    "Choline": [
+      -2.5,
+      0.5
+    ],
+    "Creatine": [
+      -2.0,
+      0.5
+    ],
+    "Creatinine": [
+      -3.0,
+      0.5
+    ]
+  },
+  "correlations": {
+    "(Lactate, Pyruvate)": 0.7,
+    "(Glucose, Lactate)": 0.5,
+    "(Choline, Betaine)": 0.5,
+    "(Creatine, Creatinine)": 0.8
+  },
+  "shift_std_ppm": 0.01,
+  "noise_relative_std": 0.05,
+  "baseline": {
+    "kind": "polynomial",
+    "amplitude": 0.1
+  },
+  "rationale": "The concentration ranges are based on typical values found in human serum, with means and standard deviations estimated from literature reviews. Correlations are included for metabolites known to be biologically linked, such as Lactate and Pyruvate through glycolysis, Glucose and Lactate through glycolytic flux, Choline and Betaine through one-carbon metabolism, and Creatine and Creatinine through creatine kinase activity. The shift standard deviation and noise relative standard deviation are estimated from typical NMR instrumental variations. The baseline is modeled as a polynomial, reflecting common practice in NMR spectral processing."
+}

@@ -1,0 +1,101 @@
+{
+  "run_id": 104,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 4,
+  "n_searches": 5,
+  "n_unique_queries": 5,
+  "n_pmids_fetched": 8,
+  "pmids_fetched": [
+    "25499120",
+    "30830350",
+    "32075299",
+    "33158172",
+    "35176448",
+    "36355220",
+    "37141802",
+    "39354321"
+  ],
+  "queries": [
+    "metabolite concentrations and NMR spectroscopy",
+    "metabolomics and quantitative NMR",
+    "metabolomics and NMR spectroscopy and human serum",
+    "metabolomics and NMR spectroscopy and human serum and cancer",
+    "metabolomics and NMR spectroscopy and human serum and cancer and diagnosis"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.16912363619527343,
+    "n_valid": 11,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Histidine__Cysteine": 0.1,
+        "Lactate__Cysteine": 0.3,
+        "Lactate__Histidine": 0.2
+      },
+      "noise_shift": {
+        "noise_amp": 0.1,
+        "shift_amp": 0.05
+      },
+      "ranges": {
+        "Cysteine": [
+          0.05,
+          0.5
+        ],
+        "Histidine": [
+          -0.5,
+          0.5
+        ],
+        "Lactate": [
+          0.1,
+          0.5
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16912363619527343,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16912363619527343,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16912363619527343,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16912363619527343,
+      "n_valid": 11
+    }
+  ],
+  "improvement_best": 0.008652130692339277
+}

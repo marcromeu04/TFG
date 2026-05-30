@@ -1,0 +1,29 @@
+{
+  "ranges": {
+    "Lactate": [-1.5, 0.5],
+    "Histidine": [-3.0, 0.5],
+    "Cysteine": [-2.5, 0.5],
+    "Glucose": [-1.0, 0.5],
+    "Glycine": [-2.0, 0.5],
+    "Betaine": [-2.5, 0.5],
+    "Pyruvate": [-2.0, 0.5],
+    "Threonine": [-2.5, 0.5],
+    "Serine": [-2.5, 0.5],
+    "Choline": [-2.5, 0.5],
+    "Creatine": [-2.0, 0.5],
+    "Creatinine": [-3.0, 0.5]
+  },
+  "correlations": {
+    "(Lactate, Pyruvate)": 0.7,
+    "(Glucose, Lactate)": 0.5,
+    "(Creatine, Creatinine)": 0.8,
+    "(Choline, Betaine)": 0.4
+  },
+  "shift_std_ppm": 0.01,
+  "noise_relative_std": 0.05,
+  "baseline": {
+    "kind": "polynomial",
+    "amplitude": 0.1
+  },
+  "rationale": "The concentration ranges are based on general literature values for human serum metabolites. Correlations are chosen based on known metabolic pathways: lactate and pyruvate are linked through glycolysis, glucose and lactate through glycolysis and gluconeogenesis, creatine and creatinine through muscle metabolism, and choline and betaine through choline metabolism. The shift and noise parameters are typical for 1H NMR spectra. The baseline is modelled as a polynomial, which is a common choice for NMR spectra. The amplitude is set to a relatively low value to reflect the typical smoothness of NMR baselines."
+}

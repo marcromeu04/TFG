@@ -1,0 +1,182 @@
+{
+  "run_id": 100,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 2,
+  "n_searches": 6,
+  "n_unique_queries": 6,
+  "n_pmids_fetched": 3,
+  "pmids_fetched": [
+    "18419139",
+    "31362062",
+    "35139218"
+  ],
+  "queries": [
+    "metabolite correlations in human serum",
+    "human serum metabolomics",
+    "human serum metabolite quantification",
+    "metabolite correlations and baseline kind in human serum",
+    "human serum metabolomics baseline",
+    "human serum metabolomics noise shift"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.1389578430082607,
+    "n_valid": 11,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Betaine__Choline": 0.3,
+        "Betaine__Creatine": 0.2,
+        "Betaine__Creatinine": 0.1,
+        "Betaine__Pyruvate": 0.1,
+        "Betaine__Serine": 0.2,
+        "Betaine__Threonine": 0.2,
+        "Choline__Creatine": 0.2,
+        "Choline__Creatinine": 0.1,
+        "Creatine__Creatinine": 0.5,
+        "Cysteine__Betaine": 0.3,
+        "Cysteine__Choline": 0.1,
+        "Cysteine__Creatine": 0.2,
+        "Cysteine__Creatinine": 0.1,
+        "Cysteine__Glucose": 0.1,
+        "Cysteine__Glycine": 0.2,
+        "Cysteine__Pyruvate": 0.1,
+        "Cysteine__Serine": 0.2,
+        "Cysteine__Threonine": 0.2,
+        "Glucose__Betaine": 0.1,
+        "Glucose__Choline": 0.1,
+        "Glucose__Creatine": 0.5,
+        "Glucose__Creatinine": 0.1,
+        "Glucose__Glycine": 0.2,
+        "Glucose__Pyruvate": 0.5,
+        "Glucose__Serine": 0.3,
+        "Glucose__Threonine": 0.2,
+        "Glycine__Betaine": 0.2,
+        "Glycine__Choline": 0.1,
+        "Glycine__Creatine": 0.2,
+        "Glycine__Creatinine": 0.1,
+        "Glycine__Pyruvate": 0.1,
+        "Glycine__Serine": 0.2,
+        "Glycine__Threonine": 0.3,
+        "Histidine__Betaine": 0.2,
+        "Histidine__Choline": 0.1,
+        "Histidine__Creatine": 0.2,
+        "Histidine__Creatinine": 0.1,
+        "Histidine__Cysteine": 0.2,
+        "Histidine__Glucose": 0.1,
+        "Histidine__Glycine": 0.3,
+        "Histidine__Pyruvate": 0.1,
+        "Histidine__Serine": 0.2,
+        "Histidine__Threonine": 0.3,
+        "Lactate__Betaine": 0.1,
+        "Lactate__Choline": 0.1,
+        "Lactate__Creatine": 0.5,
+        "Lactate__Creatinine": 0.1,
+        "Lactate__Cysteine": 0.1,
+        "Lactate__Glucose": 0.5,
+        "Lactate__Glycine": 0.2,
+        "Lactate__Histidine": 0.2,
+        "Lactate__Pyruvate": 0.5,
+        "Lactate__Serine": 0.3,
+        "Lactate__Threonine": 0.2,
+        "Pyruvate__Choline": 0.1,
+        "Pyruvate__Creatine": 0.5,
+        "Pyruvate__Creatinine": 0.1,
+        "Pyruvate__Serine": 0.3,
+        "Pyruvate__Threonine": 0.2,
+        "Serine__Choline": 0.1,
+        "Serine__Creatine": 0.3,
+        "Serine__Creatinine": 0.1,
+        "Threonine__Choline": 0.1,
+        "Threonine__Creatine": 0.2,
+        "Threonine__Creatinine": 0.1,
+        "Threonine__Serine": 0.2
+      },
+      "noise_shift": {
+        "noise_amp": 0.1,
+        "shift_amp": 0.1
+      },
+      "ranges": {
+        "Betaine": [
+          0.01,
+          0.1
+        ],
+        "Choline": [
+          0.01,
+          0.1
+        ],
+        "Creatine": [
+          0.1,
+          0.5
+        ],
+        "Creatinine": [
+          0.01,
+          0.1
+        ],
+        "Cysteine": [
+          0.01,
+          0.1
+        ],
+        "Glucose": [
+          0.1,
+          0.5
+        ],
+        "Glycine": [
+          0.01,
+          0.1
+        ],
+        "Histidine": [
+          0.01,
+          0.1
+        ],
+        "Lactate": [
+          0.1,
+          0.5
+        ],
+        "Pyruvate": [
+          0.01,
+          0.1
+        ],
+        "Serine": [
+          0.01,
+          0.1
+        ],
+        "Threonine": [
+          0.01,
+          0.1
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.1389578430082607,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.1389578430082607,
+      "n_valid": 11
+    }
+  ],
+  "improvement_best": -0.021513662494673458
+}

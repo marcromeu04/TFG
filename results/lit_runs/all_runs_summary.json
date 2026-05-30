@@ -1,0 +1,849 @@
+[
+  {
+    "run_id": 0,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "n_iterations_completed": 5,
+    "n_evaluations": 3,
+    "n_searches": 6,
+    "n_unique_queries": 4,
+    "n_pmids_fetched": 2,
+    "pmids_fetched": [
+      "21359215",
+      "35026155"
+    ],
+    "queries": [
+      "metabolite correlations in human serum",
+      "human serum metabolomics",
+      "studies that found NO correlation between X and Y in serum",
+      "correlation between serum metabolites",
+      "metabolite correlations in human serum",
+      "human serum metabolomics"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.17343132437796177,
+      "n_valid": 8,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Betaine__Choline": 0.4,
+          "Creatine__Creatinine": 0.6,
+          "Glucose__Glycine": 0.2,
+          "Histidine__Cysteine": 0.3,
+          "Lactate__Glucose": 0.5,
+          "Pyruvate__Serine": 0.1,
+          "Threonine__Serine": 0.2
+        },
+        "noise_shift": {
+          "noise_amp": 0.1,
+          "shift_amp": 0.01
+        },
+        "ranges": {
+          "Betaine": [
+            0.01,
+            0.1
+          ],
+          "Choline": [
+            0.01,
+            0.1
+          ],
+          "Creatine": [
+            0.1,
+            1
+          ],
+          "Creatinine": [
+            0.01,
+            0.1
+          ],
+          "Cysteine": [
+            0.01,
+            0.1
+          ],
+          "Glucose": [
+            0.1,
+            1
+          ],
+          "Glycine": [
+            0.01,
+            0.1
+          ],
+          "Histidine": [
+            0.01,
+            0.1
+          ],
+          "Lactate": [
+            0.1,
+            0.5
+          ],
+          "Pyruvate": [
+            0.01,
+            0.1
+          ],
+          "Serine": [
+            0.01,
+            0.1
+          ],
+          "Threonine": [
+            0.01,
+            0.1
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.17343132437796177,
+        "n_valid": 8
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "pls_bins",
+        "spearman_mean": -0.0022643532528776635,
+        "n_valid": 8
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.17343132437796177,
+        "n_valid": 8
+      }
+    ],
+    "improvement_best": 0.012959818875027618
+  },
+  {
+    "run_id": 1,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.3,
+    "n_iterations_completed": 5,
+    "n_evaluations": 5,
+    "n_searches": 4,
+    "n_unique_queries": 4,
+    "n_pmids_fetched": 5,
+    "pmids_fetched": [
+      "30742692",
+      "31127814",
+      "31564849",
+      "31778675",
+      "35761396"
+    ],
+    "queries": [
+      "1H-NMR metabolomics human serum metabolite correlation",
+      "1H-NMR metabolomics human serum metabolite correlation creatine",
+      "1H-NMR metabolomics human serum metabolite correlation creatine threonine",
+      "1H-NMR metabolomics human serum metabolite correlation creatine betaine"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.12728336840245608,
+      "n_valid": 8,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Betaine__Choline": 0.4,
+          "Creatine__Betaine": 0.3,
+          "Creatine__Glycine": 0.7,
+          "Creatine__Threonine": 0.4,
+          "Histidine__Cysteine": 0.5
+        },
+        "noise_shift": {
+          "noise_amp": 0.1,
+          "shift_amp": 0.1
+        },
+        "ranges": {
+          "Betaine": [
+            0.5,
+            1.5
+          ],
+          "Choline": [
+            0.5,
+            1.5
+          ],
+          "Creatine": [
+            1.5,
+            2.5
+          ],
+          "Cysteine": [
+            0.5,
+            1.5
+          ],
+          "Glycine": [
+            0.5,
+            1.5
+          ],
+          "Histidine": [
+            0.5,
+            1.5
+          ],
+          "Threonine": [
+            0.5,
+            1.5
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.03535239179292351,
+        "n_valid": 9
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.041971264644520556,
+        "n_valid": 10
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.11475982885956605,
+        "n_valid": 9
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.09145871550862497,
+        "n_valid": 8
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.12728336840245608,
+        "n_valid": 8
+      }
+    ],
+    "improvement_best": -0.03318813710047808
+  },
+  {
+    "run_id": 2,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.4,
+    "n_iterations_completed": 5,
+    "n_evaluations": 3,
+    "n_searches": 3,
+    "n_unique_queries": 1,
+    "n_pmids_fetched": 3,
+    "pmids_fetched": [
+      "24027187",
+      "35460851",
+      "40133061"
+    ],
+    "queries": [
+      "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics",
+      "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics",
+      "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.16377548168781694,
+      "n_valid": 11,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Lactate__Betaine": 0.2,
+          "Lactate__Cysteine": 0.2,
+          "Lactate__Glucose": 0.5,
+          "Lactate__Glycine": 0.2,
+          "Lactate__Histidine": 0.2,
+          "Lactate__Pyruvate": 0.2,
+          "Lactate__Serine": 0.2,
+          "Lactate__Taurine": 0.5,
+          "Lactate__Threonine": 0.2
+        },
+        "noise_shift": {
+          "noise_amp": 0.1,
+          "shift_amp": 0.1
+        },
+        "ranges": {
+          "Betaine": [
+            0.01,
+            0.1
+          ],
+          "Cysteine": [
+            0.01,
+            0.1
+          ],
+          "Glucose": [
+            0.1,
+            0.5
+          ],
+          "Glycine": [
+            0.01,
+            0.1
+          ],
+          "Histidine": [
+            0.01,
+            0.1
+          ],
+          "Lactate": [
+            0.1,
+            0.5
+          ],
+          "Pyruvate": [
+            0.01,
+            0.1
+          ],
+          "Serine": [
+            0.01,
+            0.1
+          ],
+          "Taurine": [
+            0.1,
+            0.5
+          ],
+          "Threonine": [
+            0.01,
+            0.1
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.16377548168781694,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.16377548168781694,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.16377548168781694,
+        "n_valid": 11
+      }
+    ],
+    "improvement_best": 0.0033039761848827898
+  },
+  {
+    "run_id": 3,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.5,
+    "n_iterations_completed": 5,
+    "n_evaluations": 1,
+    "n_searches": 3,
+    "n_unique_queries": 3,
+    "n_pmids_fetched": 0,
+    "pmids_fetched": [],
+    "queries": [
+      "Histidine metabolism in human serum",
+      "metabolomics of lactate and glucose in human serum",
+      "relationship between choline and creatine in human metabolism"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": -0.11087857773075391,
+      "n_valid": 1,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Betaine__Pyruvate": 0.2,
+          "Creatine__Creatinine": 0.5,
+          "Glucose__Glycine": 0.3,
+          "Histidine__Cysteine": 0.2,
+          "Lactate__Glucose": 0.5,
+          "Threonine__Serine": 0.3
+        },
+        "noise_shift": {
+          "noise_amp": 0.1,
+          "shift_amp": 0.01
+        },
+        "ranges": {
+          "Betaine": [
+            0.2,
+            0.5
+          ],
+          "Creatine": [
+            0.5,
+            1
+          ],
+          "Creatinine": [
+            0.2,
+            0.5
+          ],
+          "Cysteine": [
+            0.3,
+            0.8
+          ],
+          "Glucose": [
+            0.5,
+            1
+          ],
+          "Glycine": [
+            0.3,
+            0.8
+          ],
+          "Histidine": [
+            0.8,
+            1.2
+          ],
+          "Lactate": [
+            0.5,
+            1
+          ],
+          "Pyruvate": [
+            0.3,
+            0.8
+          ],
+          "Serine": [
+            0.3,
+            0.8
+          ],
+          "Threonine": [
+            0.3,
+            0.8
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": -0.11087857773075391,
+        "n_valid": 1
+      }
+    ],
+    "improvement_best": -0.27135008323368803
+  },
+  {
+    "run_id": 4,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.6,
+    "n_iterations_completed": 5,
+    "n_evaluations": 3,
+    "n_searches": 4,
+    "n_unique_queries": 4,
+    "n_pmids_fetched": 2,
+    "pmids_fetched": [
+      "32075299",
+      "35139219"
+    ],
+    "queries": [
+      "metabolite correlations in human serum",
+      "human serum metabolomics lactate glucose correlation",
+      "lactate serine correlation human serum",
+      "metabolomics human serum lactate"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.01355781570864711,
+      "n_valid": 5,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Histidine__Cysteine": 0.2,
+          "Lactate__Glucose": 0.5,
+          "Lactate__Serine": 0.5,
+          "Serine__Glycine": 0.4
+        },
+        "noise_shift": {
+          "noise_amp": 0.1,
+          "shift_amp": 0.1
+        },
+        "ranges": {
+          "Betaine": [
+            0.1,
+            1.1
+          ],
+          "Choline": [
+            0.1,
+            1.1
+          ],
+          "Creatine": [
+            0.5,
+            1.5
+          ],
+          "Creatinine": [
+            0.1,
+            1.1
+          ],
+          "Cysteine": [
+            0.1,
+            1.1
+          ],
+          "Glucose": [
+            0.5,
+            1.5
+          ],
+          "Glycine": [
+            0.2,
+            1.2
+          ],
+          "Histidine": [
+            0.1,
+            1.1
+          ],
+          "Lactate": [
+            0.8,
+            2
+          ],
+          "Pyruvate": [
+            0.1,
+            1.1
+          ],
+          "Serine": [
+            0.2,
+            1.2
+          ],
+          "Threonine": [
+            0.2,
+            1.2
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": -0.04985085258184718,
+        "n_valid": 4
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": -0.04985085258184718,
+        "n_valid": 4
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.01355781570864711,
+        "n_valid": 5
+      }
+    ],
+    "improvement_best": -0.14691368979428704
+  },
+  {
+    "run_id": 5,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.4,
+    "n_iterations_completed": 5,
+    "n_evaluations": 7,
+    "n_searches": 16,
+    "n_unique_queries": 13,
+    "n_pmids_fetched": 5,
+    "pmids_fetched": [
+      "25499120",
+      "25677154",
+      "30658393",
+      "32075299",
+      "35176448"
+    ],
+    "queries": [
+      "1H-NMR spectroscopy human serum metabolomics",
+      "limitations of 1H-NMR in metabolomics",
+      "1H-NMR spectroscopy human serum metabolomics limitations",
+      "metabolomics serum NMR spectroscopy",
+      "serum metabolomics NMR limitations",
+      "1H-NMR spectroscopy serum metabolomics",
+      "NMR spectroscopy serum metabolomics",
+      "serum metabolomics NMR limitations",
+      "serum metabolomics NMR spectroscopy",
+      "NMR spectroscopy serum metabolomics limitations",
+      "serum metabolomics NMR spectroscopy limitations",
+      "NMR spectroscopy serum metabolomics",
+      "metabolomics NMR spectroscopy limitations",
+      "NMR spectroscopy metabolomics",
+      "NMR spectroscopy serum metabolomics limitations",
+      "metabolomics NMR spectroscopy"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.18552085715506783,
+      "n_valid": 12,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "spline",
+        "correlations": {
+          "Glucose__Pyruvate": 0.3,
+          "Lactate__Glucose": 0.6,
+          "Lactate__Pyruvate": 0.4
+        },
+        "noise_shift": {
+          "noise_amp": 0.2,
+          "shift_amp": 0.02
+        },
+        "ranges": {
+          "Betaine": [
+            0.2,
+            0.2
+          ],
+          "Choline": [
+            0.3,
+            0.2
+          ],
+          "Creatine": [
+            0.2,
+            0.2
+          ],
+          "Creatinine": [
+            0.2,
+            0.2
+          ],
+          "Cysteine": [
+            0.2,
+            0.2
+          ],
+          "Glucose": [
+            0.4,
+            0.2
+          ],
+          "Glycine": [
+            0.3,
+            0.2
+          ],
+          "Histidine": [
+            0.3,
+            0.2
+          ],
+          "Lactate": [
+            0.6,
+            0.2
+          ],
+          "Pyruvate": [
+            0.3,
+            0.2
+          ],
+          "Serine": [
+            0.4,
+            0.2
+          ],
+          "Threonine": [
+            0.2,
+            0.2
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.14409783854823194,
+        "n_valid": 12
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.18552085715506783,
+        "n_valid": 12
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.18112792460634486,
+        "n_valid": 10
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.06157778610127169,
+        "n_valid": 7
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.09805069899622937,
+        "n_valid": 3
+      },
+      {
+        "iter": 2,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.18222338979821637,
+        "n_valid": 12
+      },
+      {
+        "iter": 2,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.1814370196060408,
+        "n_valid": 10
+      }
+    ],
+    "improvement_best": 0.025049351652133678
+  },
+  {
+    "run_id": 6,
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.4,
+    "n_iterations_completed": 5,
+    "n_evaluations": 2,
+    "n_searches": 8,
+    "n_unique_queries": 8,
+    "n_pmids_fetched": 5,
+    "pmids_fetched": [
+      "36693796",
+      "36870568",
+      "37084165",
+      "37236495",
+      "39222865"
+    ],
+    "queries": [
+      "metabolite correlations in human serum",
+      "human serum metabolomics",
+      "lactate and glucose correlation in human serum",
+      "relationship between lactate and glucose levels in human serum",
+      "lactate glucose human serum",
+      "studies that found NO correlation between lactate and glucose levels in human serum",
+      "lactate and glucose levels in human serum no correlation",
+      "human serum lactate glucose no association"
+    ],
+    "initial": {
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    "best": {
+      "iteration": 1,
+      "spearman_mean": 0.14723247937445388,
+      "n_valid": 10,
+      "model_used": "ridge_bins",
+      "spec": {
+        "baseline_kind": "polynomial",
+        "correlations": {
+          "Lactate__Glucose": 0.4
+        },
+        "noise_shift": {
+          "noise_amp": 0.2,
+          "shift_amp": 0.2
+        },
+        "ranges": {
+          "Glucose": [
+            0.2,
+            0.4
+          ],
+          "Lactate": [
+            -0.4,
+            0.4
+          ]
+        }
+      }
+    },
+    "trajectory": [
+      {
+        "iter": 0,
+        "kind": "initial",
+        "model": null,
+        "spearman_mean": 0.16047150550293415,
+        "n_valid": 11
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.12955817178207718,
+        "n_valid": 10
+      },
+      {
+        "iter": 1,
+        "kind": "evaluation",
+        "model": "ridge_bins",
+        "spearman_mean": 0.14723247937445388,
+        "n_valid": 10
+      }
+    ],
+    "improvement_best": -0.013239026128480269
+  }
+]

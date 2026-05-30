@@ -1,0 +1,66 @@
+{
+  "ranges": {
+    "Lactate": [
+      -1.5,
+      0.5
+    ],
+    "Histidine": [
+      -3.0,
+      0.5
+    ],
+    "Cysteine": [
+      -2.5,
+      0.5
+    ],
+    "Glucose": [
+      -1.0,
+      0.5
+    ],
+    "Glycine": [
+      -2.0,
+      0.5
+    ],
+    "Betaine": [
+      -2.5,
+      0.5
+    ],
+    "Pyruvate": [
+      -2.0,
+      0.5
+    ],
+    "Threonine": [
+      -2.5,
+      0.5
+    ],
+    "Serine": [
+      -2.5,
+      0.5
+    ],
+    "Choline": [
+      -2.0,
+      0.5
+    ],
+    "Creatine": [
+      -1.5,
+      0.5
+    ],
+    "Creatinine": [
+      -2.0,
+      0.5
+    ]
+  },
+  "correlations": {
+    "Lactate, Pyruvate": 0.7,
+    "Glucose, Lactate": 0.4,
+    "Glucose, Pyruvate": 0.3,
+    "Creatine, Creatinine": 0.6,
+    "Choline, Betaine": 0.4
+  },
+  "shift_std_ppm": 0.01,
+  "noise_relative_std": 0.05,
+  "baseline": {
+    "kind": "polynomial",
+    "amplitude": 0.1
+  },
+  "rationale": "Ranges are based on general literature priors for serum concentrations. Correlations are based on known metabolic pathways, such as glycolysis (Lactate, Pyruvate, Glucose) and creatine kinase reaction (Creatine, Creatinine). Choline and Betaine are correlated due to their role in methylation processes. The shift standard deviation and noise relative standard deviation are typical values for 1H NMR spectra. The baseline is modeled as a polynomial with a small amplitude, which is a common approach for 1H NMR spectra of serum samples."
+}

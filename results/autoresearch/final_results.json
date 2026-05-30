@@ -1,0 +1,24 @@
+{
+  "n_specs_proposed": 30,
+  "temperatures": [
+    0.2,
+    0.4,
+    0.6
+  ],
+  "selected_spec_id": 28,
+  "selected_T": 0.6,
+  "selected_cv_spearman": 0.11577131767330036,
+  "selected_full_spearman": 0.08599315184606095,
+  "selected_ci": [
+    0.034236723310867266,
+    0.13668099677179732
+  ],
+  "naive_spearman": 0.09058186233669366,
+  "naive_ci": [
+    0.028554737803231513,
+    0.20872601163191062
+  ],
+  "delta_spearman": -0.004588710490632711,
+  "p_value_paired_bootstrap": 0.574,
+  "selected_metabolites_n": 6
+}

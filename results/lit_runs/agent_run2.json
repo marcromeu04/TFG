@@ -1,0 +1,121 @@
+{
+  "run_id": 2,
+  "model": "llama-3.3-70b-versatile",
+  "temperature": 0.4,
+  "n_iterations_completed": 5,
+  "n_evaluations": 3,
+  "n_searches": 3,
+  "n_unique_queries": 1,
+  "n_pmids_fetched": 3,
+  "pmids_fetched": [
+    "24027187",
+    "35460851",
+    "40133061"
+  ],
+  "queries": [
+    "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics",
+    "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics",
+    "metabolite concentration effects on Spearman correlation in 1H-NMR metabolomics"
+  ],
+  "initial": {
+    "spearman_mean": 0.16047150550293415,
+    "n_valid": 11
+  },
+  "best": {
+    "iteration": 1,
+    "spearman_mean": 0.16377548168781694,
+    "n_valid": 11,
+    "model_used": "ridge_bins",
+    "spec": {
+      "baseline_kind": "polynomial",
+      "correlations": {
+        "Lactate__Betaine": 0.2,
+        "Lactate__Cysteine": 0.2,
+        "Lactate__Glucose": 0.5,
+        "Lactate__Glycine": 0.2,
+        "Lactate__Histidine": 0.2,
+        "Lactate__Pyruvate": 0.2,
+        "Lactate__Serine": 0.2,
+        "Lactate__Taurine": 0.5,
+        "Lactate__Threonine": 0.2
+      },
+      "noise_shift": {
+        "noise_amp": 0.1,
+        "shift_amp": 0.1
+      },
+      "ranges": {
+        "Betaine": [
+          0.01,
+          0.1
+        ],
+        "Cysteine": [
+          0.01,
+          0.1
+        ],
+        "Glucose": [
+          0.1,
+          0.5
+        ],
+        "Glycine": [
+          0.01,
+          0.1
+        ],
+        "Histidine": [
+          0.01,
+          0.1
+        ],
+        "Lactate": [
+          0.1,
+          0.5
+        ],
+        "Pyruvate": [
+          0.01,
+          0.1
+        ],
+        "Serine": [
+          0.01,
+          0.1
+        ],
+        "Taurine": [
+          0.1,
+          0.5
+        ],
+        "Threonine": [
+          0.01,
+          0.1
+        ]
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "iter": 0,
+      "kind": "initial",
+      "model": null,
+      "spearman_mean": 0.16047150550293415,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16377548168781694,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16377548168781694,
+      "n_valid": 11
+    },
+    {
+      "iter": 1,
+      "kind": "evaluation",
+      "model": "ridge_bins",
+      "spearman_mean": 0.16377548168781694,
+      "n_valid": 11
+    }
+  ],
+  "improvement_best": 0.0033039761848827898
+}
